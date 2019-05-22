@@ -1,0 +1,6 @@
+{
+  "jwtPrivateKey": "this is the secret key",
+  "fontendUrl": "http://localhost:4200",
+  "db": "mongodb://localhost/vidly",
+  "logLevel": "debug"
+}
