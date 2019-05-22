@@ -6,6 +6,14 @@ class loggerClass {
 
     private defaultLevel: string = config.get('logLevel');
 
+    private consoleTransports = new transports.Console({
+        format: format.combine(
+            format.colorize(),
+            format.simple(),
+            format.timestamp(),
+        )
+    })
+
     private options: LoggerOptions = {
         exitOnError: false,
         level: this.defaultLevel,
@@ -19,7 +27,7 @@ class loggerClass {
         ],
 
         exceptionHandlers: [
-            new transports.Console(),
+            this.consoleTransports,
             new transports.File({ filename: 'logs/exceptions.log' }),
         ]
     };
@@ -28,13 +36,7 @@ class loggerClass {
         this.logger = createLogger(this.options);
 
         if (process.env.NODE_ENV === "development") {
-            this.logger.add(new transports.Console({
-                format: format.combine(
-                    format.colorize(),
-                    format.simple(),
-                    format.timestamp(),
-                )
-            }));
+            this.logger.add(this.consoleTransports);
         }
     }
 }

@@ -1,6 +1,6 @@
 import * as express from 'express';
 import { Pokemons } from "./routes/pokemons";
-import { db } from '@/_startup';
+import { db, cors } from '@/_startup';
 
 class App {
 
@@ -9,10 +9,13 @@ class App {
     public pokeRoutes: Pokemons = new Pokemons();
 
     constructor() {
+        // Start connect to database
         db();
 
         this.app = express(); //TK
         this.config();
+
+
 
         this.pokeRoutes.routes(this.app);
     }
@@ -24,6 +27,9 @@ class App {
         this.app.use(express.urlencoded({
             extended: false
         }));
+
+        // Cors
+        this.app.use(cors);
     }
 
 }
