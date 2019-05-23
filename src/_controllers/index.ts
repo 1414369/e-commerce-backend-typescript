@@ -1,2 +1,3 @@
 export * from './products'
-export * from './users.controller'
+export * from './users'
+export * from './product-category'

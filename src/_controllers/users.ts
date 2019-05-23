@@ -1,14 +1,14 @@
-import User, { validateUser, hashPassword, iUser } from '@/_models/user.model';
+import User, { validate, hashPassword, iUser } from '@/_models/user';
 import * as _ from 'lodash';
 
-export class usersController {
+export class userController {
     static getMyInfo = async (req, res) => {
         const user: iUser = await User.findById(req["user"]._id).select('-password');
         res.send(user);
     }
 
     static createUser = async (req, res) => {
-        const { error } = validateUser(req.body);
+        const { error } = validate(req.body);
         if (error) return res.status(400).send(error.details[0].message);
 
         let user: iUser = await User.findOne({ email: req.body.email });

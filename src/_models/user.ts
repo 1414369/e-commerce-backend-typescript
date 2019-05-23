@@ -49,7 +49,7 @@ userSchema.methods.generateAuthToken = function () {
 
 const User = model<iUser>('User', userSchema);
 
-export function validateUser(user) {
+export function validate(user) {
   const schema = {
     name: Joi.string().min(5).max(50).required(),
     email: Joi.string().min(5).max(255).required().email(),
