@@ -1,12 +1,10 @@
 import * as express from 'express';
-import { Pokemons } from "./routes/pokemons";
 import { db, cors } from '@/_startup';
+import rootRoute from '@/routes';
 
 class App {
 
     public app: express.Application;
-
-    public pokeRoutes: Pokemons = new Pokemons();
 
     constructor() {
         // Start connect to database
@@ -15,9 +13,8 @@ class App {
         this.app = express(); //TK
         this.config();
 
-
-
-        this.pokeRoutes.routes(this.app);
+        // import all routes
+        this.app.use(rootRoute)
     }
 
     private config(): void {
