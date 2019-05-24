@@ -14,12 +14,12 @@ export class productController {
     }
 
     static createProduct = async (req, res) => {
-        if (!(req.body && req.body.products)) {
+        if (!(req.body && req.body.data)) {
             return res.status(400).send(ResponseString.BAD_REQUEST);
         }
         let products: iProduct;
 
-        products = JSON.parse(req.body.products);
+        products = JSON.parse(req.body.data);
         if (req.file && req.file.path) {
             products.imageUrl = `http://localhost:${process.env.PORT || 3000}/${req.file.path}`;
         }

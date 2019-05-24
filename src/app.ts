@@ -1,12 +1,14 @@
 import * as express from 'express';
-import { dbInit, corsInit } from '@/startup';
+import { dbInit, corsInit, unhandledRejection } from '@/startup';
 import { apiRoute, errorHandlesRoute } from '@/_routes';
-
+import 'express-async-errors';
 class App {
 
     public app: express.Application;
 
     constructor() {
+        unhandledRejection();
+        
         // Connect to database
         dbInit();
 

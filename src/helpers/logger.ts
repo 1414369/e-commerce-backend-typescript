@@ -3,7 +3,11 @@ import * as config from 'config';
 
 export const logger = loggerInit();
 
-function loggerInit(): Logger {
+interface CustomeLogger extends Logger {
+    waitForLogger?: Function;
+}
+
+function loggerInit(): CustomeLogger {
 
     const defaultLevel: string = config.get('logLevel');
 
@@ -33,11 +37,17 @@ function loggerInit(): Logger {
         ]
     };
 
-    let logger: Logger = createLogger(options);
+    let logger: CustomeLogger = createLogger(options);
 
     if (process.env.NODE_ENV === "development") {
         logger.add(consoleTransports);
     }
+
+    logger.waitForLogger = function () {
+        const transportsFinished = logger.transports.map(t => new Promise(resolve => t.on('finish', resolve)));
+        logger.end();
+        return Promise.all(transportsFinished);
+    };
 
     return logger;
 };

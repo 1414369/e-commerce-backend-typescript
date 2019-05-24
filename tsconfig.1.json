@@ -3,18 +3,13 @@
     "baseUrl": "./",
     "outDir": "./dist", //change the output directory
     "sourceMap": true,
-    "target": "es6", //default is es5
+    "target": "es7", //default is es5
     "module": "commonjs", //CommonJs style module in output
     "paths": {
       "@/*": [
         "src/*"
       ]
-    },
-    "plugins": [
-      {
-        "transform": "@zerollup/ts-transform-paths",
-      }
-    ]
+    }
   },
   "include": [
     "src/**/*.ts" //which kind of files to compile
