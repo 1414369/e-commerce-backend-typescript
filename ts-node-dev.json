@@ -1,0 +1,12 @@
+{
+  "ignore-watch": [
+    ".git",
+    "node_modules/**/node_modules",
+    "dist/"
+  ],
+  "watch": [
+    "src/"
+  ],
+  "debounce": 300,
+  "ext": "js,json,ts"
+}
