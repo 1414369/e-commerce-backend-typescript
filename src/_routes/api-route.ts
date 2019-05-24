@@ -3,10 +3,8 @@ import usersRoute from "./users";
 import productsRoute from "./products";
 import productsCategoryRoute from "./product-category";
 
-const routes = Router();
+export const apiRoute = Router();
 
-routes.use("/users", usersRoute);
-routes.use("/products", productsRoute);
-routes.use("/products-category", productsCategoryRoute);
-
-export default routes;
+apiRoute.use("/users", usersRoute);
+apiRoute.use("/products", productsRoute);
+apiRoute.use("/products-category", productsCategoryRoute);

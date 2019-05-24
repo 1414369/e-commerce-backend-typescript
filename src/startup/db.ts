@@ -1,8 +1,8 @@
 import * as mongoose from 'mongoose';
 import * as config from 'config';
-import { logger } from '@/_helpers';
+import { logger } from '@/helpers';
 
-export function db() {
+export function dbInit() {
     const db: string = config.get('db');
 
     mongoose.connect(db)

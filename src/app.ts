@@ -1,20 +1,23 @@
 import * as express from 'express';
-import { db, cors } from '@/_startup';
-import rootRoute from '@/routes';
+import { dbInit, corsInit } from '@/startup';
+import { apiRoute, errorHandlesRoute } from '@/_routes';
 
 class App {
 
     public app: express.Application;
 
     constructor() {
-        // Start connect to database
-        db();
+        // Connect to database
+        dbInit();
 
         this.app = express(); //TK
         this.config();
 
-        // import all routes
-        this.app.use(rootRoute)
+        // import api routes
+        this.app.use(apiRoute)
+
+        // import error handle routes
+        this.app.use(errorHandlesRoute)
     }
 
     private config(): void {
@@ -26,7 +29,7 @@ class App {
         }));
 
         // Cors
-        this.app.use(cors);
+        this.app.use(corsInit());
     }
 
 }

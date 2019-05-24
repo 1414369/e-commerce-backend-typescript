@@ -1,5 +1,5 @@
 import * as _ from 'lodash';
-import { ResponseString } from '@/_helpers';
+import { ResponseString } from '@/helpers';
 import Products, { validate, iProduct } from '@/_models/product';
 
 export class productController {

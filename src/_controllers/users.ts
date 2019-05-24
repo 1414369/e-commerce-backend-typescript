@@ -1,4 +1,4 @@
-import User, { validate, hashPassword, iUser } from '@/_models/user';
+import User, { validate, iUser } from '@/_models/user';
 import * as _ from 'lodash';
 
 export class userController {
@@ -15,7 +15,7 @@ export class userController {
         if (user) return res.status(400).send('User already registered.');
 
         user = new User(_.pick(req.body, ['name', 'email', 'password']));
-        user.password = await hashPassword(user.password);
+        await user.hashPassword();
         await user.save();
 
         // const token = user.generateAuthToken();

@@ -9,6 +9,9 @@ export interface iUser extends Document {
   email: string;
   isAdmin: boolean;
   password: string;
+
+  generateAuthToken(): string;
+  hashPassword(): void;
 }
 
 const userSchema = new Schema({
@@ -47,6 +50,11 @@ userSchema.methods.generateAuthToken = function () {
   return token;
 }
 
+userSchema.methods.hashPassword = async function () {
+  const salt = await bcrypt.genSalt(15);
+  this.password = await bcrypt.hash(this.password, salt);
+}
+
 const User = model<iUser>('User', userSchema);
 
 export function validate(user) {
@@ -58,13 +66,6 @@ export function validate(user) {
   };
 
   return Joi.validate(user, schema);
-}
-
-export async function hashPassword(password) {
-  const salt = await bcrypt.genSalt(10);
-  const hashedPass = await bcrypt.hash(password, salt);
-
-  return hashedPass;
 }
 
 export default User;

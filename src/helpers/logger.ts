@@ -1,12 +1,13 @@
 import { Logger, LoggerOptions, transports, createLogger, format } from "winston";
 import * as config from 'config';
 
-class loggerClass {
-    public logger: Logger
+export const logger = loggerInit();
 
-    private defaultLevel: string = config.get('logLevel');
+function loggerInit(): Logger {
 
-    private consoleTransports = new transports.Console({
+    const defaultLevel: string = config.get('logLevel');
+
+    const consoleTransports = new transports.Console({
         format: format.combine(
             format.colorize(),
             format.simple(),
@@ -14,9 +15,9 @@ class loggerClass {
         )
     })
 
-    private options: LoggerOptions = {
+    const options: LoggerOptions = {
         exitOnError: false,
-        level: this.defaultLevel,
+        level: defaultLevel,
         transports: [
             //
             // - Write to all logs with level `info` and below to `combined.log` 
@@ -27,18 +28,16 @@ class loggerClass {
         ],
 
         exceptionHandlers: [
-            this.consoleTransports,
+            consoleTransports,
             new transports.File({ filename: 'logs/exceptions.log' }),
         ]
     };
 
-    constructor() {
-        this.logger = createLogger(this.options);
+    let logger: Logger = createLogger(options);
 
-        if (process.env.NODE_ENV === "development") {
-            this.logger.add(this.consoleTransports);
-        }
+    if (process.env.NODE_ENV === "development") {
+        logger.add(consoleTransports);
     }
-}
 
-export let logger = new loggerClass().logger;
+    return logger;
+};
