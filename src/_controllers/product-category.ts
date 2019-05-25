@@ -2,12 +2,12 @@ import ProductCategory, { validate } from '@/_models/product-category';
 import * as _ from 'lodash';
 
 export class productCategoryController {
-    static getList = async (req, res) => {
+    static getList = async (req, res, next) => {
         const productCategory = await ProductCategory.find({}, 'name').sort({ name: -1 });
         res.send(productCategory);
     }
 
-    static create = async (req, res) => {
+    static create = async (req, res, next) => {
         const { error } = validate(req.body);
         if (error) return res.status(400).send(error.details[0].message);
 
@@ -22,3 +22,4 @@ export class productCategoryController {
     }
 
 }
+

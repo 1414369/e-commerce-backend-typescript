@@ -1,4 +1,4 @@
-export abstract class HTTPClientError extends Error {
+abstract class ClientError extends Error {
     readonly statusCode!: number;
     readonly name!: string;
 
@@ -13,7 +13,7 @@ export abstract class HTTPClientError extends Error {
     }
 }
 
-export class HTTP400Error extends HTTPClientError {
+class Code400 extends ClientError {
     readonly statusCode = 400;
 
     constructor(message: string | object = "Bad Request") {
@@ -21,7 +21,7 @@ export class HTTP400Error extends HTTPClientError {
     }
 }
 
-export class HTTP401Error extends HTTPClientError {
+class Code401 extends ClientError {
     readonly statusCode = 401;
 
     constructor(message: string | object = "Unauthorized") {
@@ -29,7 +29,7 @@ export class HTTP401Error extends HTTPClientError {
     }
 }
 
-export class HTTP403Error extends HTTPClientError {
+class Code403 extends ClientError {
     readonly statusCode = 403;
 
     constructor(message: string | object = "Forbidden") {
@@ -37,10 +37,18 @@ export class HTTP403Error extends HTTPClientError {
     }
 }
 
-export class HTTP404Error extends HTTPClientError {
+class Code404 extends ClientError {
     readonly statusCode = 404;
 
     constructor(message: string | object = "Not found") {
         super(message);
     }
+}
+
+export const HTTPError = {
+    ClientError,
+    Code400,
+    Code401,
+    Code403,
+    Code404,
 }
