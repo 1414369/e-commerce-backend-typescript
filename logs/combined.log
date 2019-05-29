@@ -714,3 +714,78 @@
 {"message":"Connected to mongodb://localhost/vidly...","level":"info"}
 {"message":"listening on port 3000","level":"info"}
 {"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Products not found.","stack":"Code404: Products not found.\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:15:29\n    at Generator.next (<anonymous>)\n    at fulfilled (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:4:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Products not found.","stack":"Code404: Products not found.\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:15:29\n    at Generator.next (<anonymous>)\n    at fulfilled (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:4:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Invalid ID.","stack":"Code404: Invalid ID.\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:7:25\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:3:12)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:15:16\n    at paramCallback (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:404:7)\n    at param (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:384:5)\n    at Function.process_params (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:410:3)\n    at next (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:335:12)"}
+{"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Invalid ID.","stack":"Code404: Invalid ID.\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:7:25\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:3:12)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:15:16\n    at paramCallback (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:404:7)\n    at param (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:384:5)\n    at Function.process_params (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:410:3)\n    at next (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:335:12)"}
+{"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Products not found.","stack":"Code404: Products not found.\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:15:29\n    at Generator.next (<anonymous>)\n    at fulfilled (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:4:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Products not found.","stack":"Code404: Products not found.\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:15:29\n    at Generator.next (<anonymous>)\n    at fulfilled (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:4:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}

@@ -9,11 +9,7 @@ const pickPropeties = ['title', 'price', 'category', 'imageUrl'];
 export class productController {
 
     static getById = async (req, res, next) => {
-        let products;
-
-        if (req.model) {
-            products = _.pick(req.model, returnPropeties);
-        }
+        let products = _.pick(req.model, returnPropeties);
 
         return res.send(products);
     }
@@ -50,6 +46,12 @@ export class productController {
 
         await req.model.save();
 
-        res.send(_.pick(req.model, returnPropeties));
+        return res.send(_.pick(req.model, returnPropeties));
+    }
+
+    static delete = async (req, res, next) => {
+        await Products.deleteOne({ _id: req.model.id });
+
+        return res.send(true);
     }
 }

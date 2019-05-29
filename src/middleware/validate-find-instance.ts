@@ -8,8 +8,12 @@ export function validateFindInstance(modelName: string) {
 
         if (mongoose.models[modelName]) {
             const model = await mongoose.models[modelName].findById(val);
-            req['model'] = model;
-            return next();
+            if (model) {
+                req['model'] = model;
+                return next();
+            } else {
+                return next(new HTTPError.Code404(`${modelName} not found.`));
+            }
         } else {
             return next(new Error('Model is not existed.'));
         }
