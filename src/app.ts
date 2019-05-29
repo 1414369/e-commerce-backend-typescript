@@ -1,6 +1,6 @@
 import * as express from 'express';
 import { dbInit, corsInit, unhandledRejection } from '@/startup';
-import { apiRoute, errorHandlesRoute } from '@/_routes';
+import { apiRouter, errorHandlesRouteInit } from '@/_routes';
 import 'express-async-errors';
 class App {
 
@@ -8,7 +8,7 @@ class App {
 
     constructor() {
         unhandledRejection();
-        
+
         // Connect to database
         dbInit();
 
@@ -16,10 +16,10 @@ class App {
         this.config();
 
         // import api routes
-        this.app.use(apiRoute)
+        this.app.use(apiRouter);
 
-        // import error handle routes
-        this.app.use(errorHandlesRoute)
+        // import api routes
+        errorHandlesRouteInit(this.app);
     }
 
     private config(): void {

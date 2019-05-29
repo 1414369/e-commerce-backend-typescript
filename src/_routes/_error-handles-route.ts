@@ -1,8 +1,10 @@
-import { Router } from "express";
+import { Application } from "express";
 import { ErrorHandle } from "@/middleware";
 
-export const errorHandlesRoute = Router();
+export function errorHandlesRouteInit(app: Application) {
+    app.use(ErrorHandle.notFoundError);
+    app.use(ErrorHandle.clientError);
+    app.use(ErrorHandle.serverError);
+}
 
-errorHandlesRoute.use(ErrorHandle.notFoundError);
-errorHandlesRoute.use(ErrorHandle.clientError);
-errorHandlesRoute.use(ErrorHandle.serverError);
+

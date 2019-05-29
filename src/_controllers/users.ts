@@ -2,12 +2,12 @@ import User, { validate, iUser } from '@/_models/user';
 import * as _ from 'lodash';
 
 export class userController {
-    static getMyInfo = async (req, res) => {
+    static getMyInfo = async (req, res, next) => {
         const user: iUser = await User.findById(req["user"]._id).select('-password');
         res.send(user);
     }
 
-    static createUser = async (req, res) => {
+    static createUser = async (req, res, next) => {
         const { error } = validate(req.body);
         if (error) return res.status(400).send(error.details[0].message);
 

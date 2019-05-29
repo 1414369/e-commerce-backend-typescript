@@ -1,56 +1,55 @@
+import { model } from 'mongoose';
+import { HTTPError } from './../helpers/httpErrors';
 import * as _ from 'lodash';
-import { ResponseString } from '@/helpers';
 import Products, { validate, iProduct } from '@/_models/product';
 
+const returnPropeties = ['_id', 'title', 'price', 'category', 'imageUrl'];
+const pickPropeties = ['title', 'price', 'category', 'imageUrl'];
+
 export class productController {
-    static getProductById = async (req, res) => {
-        const products = await Products.findById(req.params.id, 'title price category imageUrl');
-        res.send(products);
-    }
 
-    static getAllProduct = async (req, res) => {
-        const productsList = await Products.find({}, 'title price category imageUrl').sort({ title: -1 });
-        res.send(productsList);
-    }
-
-    static createProduct = async (req, res) => {
-        if (!(req.body && req.body.data)) {
-            return res.status(400).send(ResponseString.BAD_REQUEST);
-        }
-        let products: iProduct;
-
-        products = JSON.parse(req.body.data);
-        if (req.file && req.file.path) {
-            products.imageUrl = `http://localhost:${process.env.PORT || 3000}/${req.file.path}`;
-        }
-
-        const { error } = validate(products);
-        if (error) return res.status(400).send(error.details[0].message);
-
-        products = new Products(_.pick(products, ['title', 'price', 'category', 'imageUrl']));
-
-        await products.save();
-
-        res.send(_.pick(products, ['_id', 'title', 'price', 'category', 'imageUrl']));
-    }
-    static editProduct = async (req, res) => {
-        if (!(req.body && req.body.products)) {
-            return res.status(400).send(ResponseString.BAD_REQUEST);
-        }
+    static getById = async (req, res, next) => {
         let products;
 
-        products = JSON.parse(req.body.products);
-        if (req.file && req.file.path) {
-            products.imageUrl = `http://localhost:${process.env.PORT || 3000}/${req.file.path}`;
+        if (req.model) {
+            products = _.pick(req.model, returnPropeties);
         }
 
-        const { error } = validate(products);
-        if (error) return res.status(400).send(error.details[0].message);
+        return res.send(products);
+    }
 
-        products = new Products(_.pick(products, ['title', 'price', 'category', 'imageUrl']));
+    static getAll = async (req, res, next) => {
+        const productsList = await Products.find({}, 'title price category imageUrl').sort({ title: -1 });
+        return res.send(productsList);
+    }
+
+    static create = async (req, res, next) => {
+        if (req.file && req.file.path) {
+            req.body.imageUrl = `http://localhost:${process.env.PORT || 3000}/${req.file.path}`;
+        }
+
+        let products: iProduct = req.body;
+
+        const { error } = validate(products);
+        if (error) return next(new HTTPError.Code400(error.details[0].message));
+
+        products = new Products(_.pick(products, pickPropeties));
 
         await products.save();
 
-        res.send(_.pick(products, ['_id', 'title', 'price', 'category', 'imageUrl']));
+        return res.send(_.pick(products, returnPropeties));
+    }
+    static edit = async (req, res, next) => {
+        if (req.file && req.file.path) {
+            req.body.imageUrl = `http://localhost:${process.env.PORT || 3000}/${req.file.path}`;
+        }
+
+        let products = _.pick(req.body, pickPropeties);
+
+        _.assign(req.model, products);
+
+        await req.model.save();
+
+        res.send(_.pick(req.model, returnPropeties));
     }
 }

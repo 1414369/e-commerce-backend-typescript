@@ -1,13 +1,14 @@
-import { Router, static as staticInit } from "express";
+import { Application, static as staticInit, Router } from "express";
 import usersRoute from "./users";
 import productsRoute from "./products";
 import productsCategoryRoute from "./product-category";
 import auth from "./auth";
 
-export const apiRoute = Router();
+export const apiRouter = Router();
 
-apiRoute.use('/public', staticInit('public'));
-apiRoute.use("/api/users", usersRoute);
-apiRoute.use("/api/products/category", productsCategoryRoute);
-apiRoute.use("/api/products", productsRoute);
-apiRoute.use('/api/auth', auth);
+apiRouter
+    .use('/public', staticInit('public'))
+    .use("/api/users", usersRoute)
+    .use("/api/products/category", productsCategoryRoute)
+    .use("/api/products", productsRoute)
+    .use('/api/auth', auth)
