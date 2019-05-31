@@ -1040,3 +1040,103 @@
 {"message":"Connected to mongodb://localhost/vidly...","level":"info"}
 {"message":"listening on port 3000","level":"info"}
 {"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Method not found.","stack":"Code404: Method not found.\n    at Object.<anonymous> (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\error-handlers.ts:5:15)\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\error-handlers.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\error-handlers.ts:3:12)\n    at ErrorHandle.notFoundError (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\error-handlers.ts:4:53)\n    at newFn (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at Immediate.next (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Immediate.<anonymous> (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:635:15)\n    at runCallback (timers.js:706:11)\n    at tryOnImmediate (timers.js:676:5)\n    at processImmediate (timers.js:658:5)"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"level":"error","message":"unhandledRejectionCannot read property 'pop' of undefined","stack":"TypeError: Cannot read property 'pop' of undefined\n    at Object.<anonymous> (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:45:34)\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:3:12)\n    at shoppingCartController.removeQuantity (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:38:72)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:281:22\n    at param (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at paramCallback (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:401:21)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:60:9\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:7:71"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"level":"error","message":"unhandledRejectionCannot read property 'quantity' of null","stack":"TypeError: Cannot read property 'quantity' of null\n    at Object.<anonymous> (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:31:9)\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:3:12)\n    at shoppingCartController.addQuantity (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:27:69)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:281:22\n    at param (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at paramCallback (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:401:21)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:60:9\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:7:71"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"name":"Code400","statusCode":400,"level":"warn","message":"clientError: This product is not in cart.","stack":"Code400: This product is not in cart.\n    at Object.<anonymous> (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:11:25)\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:3:12)\n    at shoppingCartController.getById (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:8:65)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:281:22\n    at param (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at paramCallback (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:401:21)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:65:9\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:7:71"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"name":"Code400","statusCode":400,"level":"warn","message":"clientError: This product is not in cart.","stack":"Code400: This product is not in cart.\n    at Object.<anonymous> (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:45:25)\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:3:12)\n    at shoppingCartController.remove (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:40:64)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:281:22\n    at param (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at paramCallback (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:401:21)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:67:9\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:7:71"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"name":"Code400","statusCode":400,"level":"warn","message":"clientError: This product is not in cart.","stack":"Code400: This product is not in cart.\n    at Object.<anonymous> (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:45:25)\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:3:12)\n    at shoppingCartController.remove (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:40:64)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:281:22\n    at param (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at paramCallback (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:401:21)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:67:9\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\api\\shopping-cart\\items\\controller.ts:7:71"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}

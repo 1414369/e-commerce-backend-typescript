@@ -13,11 +13,6 @@ export class shoppingCartController {
         return res.send(shoppingCart);
     }
 
-    // static getAll = async (req, res, next) => {
-    //     const productsList = await ShoppingCart.find({}, 'title price category imageUrl').sort({ title: -1 });
-    //     return res.send(productsList);
-    // }
-
     static create = async (req, res, next) => {
         let shoppingCart: iShoppingCart = req.body;
 
@@ -27,23 +22,4 @@ export class shoppingCartController {
 
         return res.send(_.pick(shoppingCart, returnPropeties));
     }
-    // static edit = async (req, res, next) => {
-    //     if (req.file && req.file.path) {
-    //         req.body.imageUrl = `http://localhost:${process.env.PORT || 3000}/${req.file.path}`;
-    //     }
-
-    //     let shoppingCart = _.pick(req.body, pickPropeties);
-
-    //     _.assign(req.model, shoppingCart);
-
-    //     await req.model.save();
-
-    //     return res.send(_.pick(req.model, returnPropeties));
-    // }
-
-    // static delete = async (req, res, next) => {
-    //     await ShoppingCart.deleteOne({ _id: req.model.id });
-
-    //     return res.send(true);
-    // }
 }

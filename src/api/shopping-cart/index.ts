@@ -5,13 +5,13 @@ import itemsRoutes from './items'
 
 const router = Router();
 
+// param
 router.param("id", validateFindInstance('ShoppingCarts'));
 
+// sub route
 router.use('/:id/items', itemsRoutes);
 
-// router.put('/:id', [upload.single('file'), parseData()], productController.edit);
-// router.delete('/:id', productController.delete);
-// router.get('/', productController.getAll);
+// operator
 router.get('/:id', shoppingCartController.getById);
 router.post('/', shoppingCartController.create);
 
