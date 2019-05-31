@@ -789,3 +789,254 @@
 {"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Invalid ID.","stack":"Code404: Invalid ID.\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:7:25\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:3:12)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:15:16\n    at paramCallback (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:404:7)\n    at param (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:384:5)\n    at Function.process_params (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:410:3)\n    at next (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:335:12)"}
 {"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Products not found.","stack":"Code404: Products not found.\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:15:29\n    at Generator.next (<anonymous>)\n    at fulfilled (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:4:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
 {"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Products not found.","stack":"Code404: Products not found.\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:15:29\n    at Generator.next (<anonymous>)\n    at fulfilled (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:4:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Invalid ID.","stack":"Code404: Invalid ID.\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:7:25\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:3:12)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:15:16\n    at paramCallback (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:404:7)\n    at param (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:384:5)\n    at Function.process_params (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:410:3)\n    at next (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:335:12)"}
+{"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Invalid ID.","stack":"Code404: Invalid ID.\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:7:25\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:3:12)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\validate-find-instance.ts:15:16\n    at paramCallback (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:404:7)\n    at param (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:384:5)\n    at Function.process_params (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:410:3)\n    at next (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:335:12)"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Method not found.","stack":"Code404: Method not found.\n    at Object.<anonymous> (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\error-handlers.ts:5:15)\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\error-handlers.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\error-handlers.ts:3:12)\n    at ErrorHandle.notFoundError (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\error-handlers.ts:4:53)\n    at newFn (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at Immediate.next (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Immediate.<anonymous> (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:635:15)\n    at runCallback (timers.js:706:11)\n    at tryOnImmediate (timers.js:676:5)\n    at processImmediate (timers.js:658:5)"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"name":"Code404","statusCode":404,"level":"warn","message":"clientError: Method not found.","stack":"Code404: Method not found.\n    at Object.<anonymous> (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\error-handlers.ts:5:15)\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\error-handlers.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\error-handlers.ts:3:12)\n    at ErrorHandle.notFoundError (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\middleware\\error-handlers.ts:4:53)\n    at newFn (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at Immediate.next (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Immediate.<anonymous> (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\express\\lib\\router\\index.js:635:15)\n    at runCallback (timers.js:706:11)\n    at tryOnImmediate (timers.js:676:5)\n    at processImmediate (timers.js:658:5)"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"errors":{"products.0.product":{"message":"Cast to ObjectID failed for value \"{ title: 'thịt nạc',\n  price: 12,\n  imageUrl: 'string',\n  category: 'Thịt heo' }\" at path \"product\"","name":"CastError","stringValue":"\"{ title: 'thịt nạc',\n  price: 12,\n  imageUrl: 'string',\n  category: 'Thịt heo' }\"","kind":"ObjectID","value":{"title":"thịt nạc","price":12,"imageUrl":"string","category":"Thịt heo"},"path":"product","reason":{"message":"Cast to ObjectId failed for value \"{ title: 'thịt nạc',\n  price: 12,\n  imageUrl: 'string',\n  category: 'Thịt heo' }\" at path \"product\"","name":"CastError","stringValue":"\"{ title: 'thịt nạc',\n  price: 12,\n  imageUrl: 'string',\n  category: 'Thịt heo' }\"","kind":"ObjectId","value":{"title":"thịt nạc","price":12,"imageUrl":"string","category":"Thịt heo"},"path":"product"}}},"_message":"ShoppingCarts validation failed","message":"unhandledRejectionShoppingCarts validation failed: products.0.product: Cast to ObjectID failed for value \"{ title: 'thịt nạc',\n  price: 12,\n  imageUrl: 'string',\n  category: 'Thịt heo' }\" at path \"product\"","name":"ValidationError","level":"error","stack":"ValidationError: ShoppingCarts validation failed: products.0.product: Cast to ObjectID failed for value \"{ title: 'thịt nạc',\n  price: 12,\n  imageUrl: 'string',\n  category: 'Thịt heo' }\" at path \"product\"\n    at new ValidationError (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\mongoose\\lib\\error\\validation.js:30:11)\n    at model.Document.invalidate (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\mongoose\\lib\\document.js:2259:32)\n    at EmbeddedDocument.invalidate (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\mongoose\\lib\\types\\embedded.js:290:29)\n    at EmbeddedDocument.$set (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\mongoose\\lib\\document.js:1079:10)\n    at EmbeddedDocument._handleIndex (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\mongoose\\lib\\document.js:844:14)\n    at EmbeddedDocument.$set (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\mongoose\\lib\\document.js:789:22)\n    at EmbeddedDocument.Document (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\mongoose\\lib\\document.js:122:12)\n    at EmbeddedDocument [as constructor] (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\mongoose\\lib\\types\\embedded.js:41:12)\n    at new EmbeddedDocument (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\mongoose\\lib\\schema\\documentarray.js:93:17)\n    at CoreMongooseArray._cast (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\mongoose\\lib\\types\\documentarray.js:188:12)\n    at CoreMongooseArray._mapCast (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\mongoose\\lib\\types\\array.js:333:17)\n    at Arguments.map (<anonymous>)\n    at CoreMongooseArray.push (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\node_modules\\mongoose\\lib\\types\\array.js:347:25)\n    at Object.<anonymous> (G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\_routes\\items.ts:36:27)\n    at Generator.next (<anonymous>)\n    at G:\\User\\Documents\\WokingEnviroment\\Angular\\e-commerce-backend-typescript\\src\\_routes\\items.ts:7:71"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}

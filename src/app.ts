@@ -1,6 +1,7 @@
+import { ErrorHandle } from '@/middleware';
 import * as express from 'express';
 import { dbInit, corsInit, unhandledRejection } from '@/startup';
-import { apiRouter, errorHandlesRouteInit } from '@/_routes';
+import { apiRouter } from '@/api';
 import 'express-async-errors';
 class App {
 
@@ -18,8 +19,10 @@ class App {
         // import api routes
         this.app.use(apiRouter);
 
-        // import api routes
-        errorHandlesRouteInit(this.app);
+        //Error handler
+        this.app.use(ErrorHandle.notFoundError);
+        this.app.use(ErrorHandle.clientError);
+        this.app.use(ErrorHandle.serverError);
     }
 
     private config(): void {

@@ -1,4 +1,4 @@
-import User, { validate, iUser } from '@/_models/user';
+import User, { validate, iUser } from './model';
 import * as _ from 'lodash';
 
 export class userController {

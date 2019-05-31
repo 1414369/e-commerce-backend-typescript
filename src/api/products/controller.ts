@@ -1,7 +1,7 @@
 import { model } from 'mongoose';
-import { HTTPError } from './../helpers/httpErrors';
+import { HTTPError } from '../../helpers/httpErrors';
 import * as _ from 'lodash';
-import Products, { validate, iProduct } from '@/_models/product';
+import Products, { validate, iProduct } from './model';
 
 const returnPropeties = ['_id', 'title', 'price', 'category', 'imageUrl'];
 const pickPropeties = ['title', 'price', 'category', 'imageUrl'];

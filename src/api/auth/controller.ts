@@ -1,4 +1,4 @@
-import User from '@/_models/user';
+import User from '@/api/users/model';
 import * as Joi from 'Joi';
 import * as bcrypt from 'bcrypt';
 import { HTTPError } from '@/helpers';
@@ -18,7 +18,6 @@ export class authController {
         const token = user.generateAuthToken();
         res.send({ token });
     }
-
 }
 
 const validate = function (req) {
@@ -28,4 +27,4 @@ const validate = function (req) {
     };
 
     return Joi.validate(req, schema);
-}
+}   

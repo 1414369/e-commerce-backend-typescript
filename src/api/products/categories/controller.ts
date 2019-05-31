@@ -1,4 +1,4 @@
-import ProductCategory, { validate } from '@/_models/product-category';
+import ProductCategory, { validate } from './model';
 import * as _ from 'lodash';
 
 export class productCategoryController {

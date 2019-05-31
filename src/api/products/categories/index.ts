@@ -1,7 +1,8 @@
 import { Router } from 'express';
-import { productCategoryController } from '@/_controllers'
+import { productCategoryController } from './controller'
 
 const router = Router();
+
 
 router.get('/', productCategoryController.getList);
 
