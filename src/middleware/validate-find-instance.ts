@@ -1,8 +1,9 @@
 import { HTTPError } from '@/helpers';
 import * as mongoose from 'mongoose';
+import { iExtendedRequest } from '@/_interface';
 
 export function validateFindInstance(modelName?: string) {
-    return async function (req, res, next, val) {
+    return async function (req: iExtendedRequest, res, next, val) {
         if (!mongoose.Types.ObjectId.isValid(val))
             return next(new HTTPError.Code404('Invalid ID.'));
 
@@ -13,7 +14,7 @@ export function validateFindInstance(modelName?: string) {
         if (mongoose.models[modelName]) {
             const model = await mongoose.models[modelName].findById(val);
             if (model) {
-                req['model'] = model;
+                req.model = model;
                 return next();
             } else {
                 return next(new HTTPError.Code404(`${modelName} not found.`));

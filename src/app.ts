@@ -16,6 +16,11 @@ class App {
         this.app = express(); //TK
         this.config();
 
+        this.app.route("/").options((req, res, next) => {
+            res.writeHead(200);
+            res.end();
+        })
+
         // import api routes
         this.app.use(apiRouter);
 

@@ -3,15 +3,35 @@ import { Schema, model, Document } from 'mongoose'
 import { iProduct } from '../products/model';
 
 export interface iShoppingCart extends Document {
-  products: [{
-    product: iProduct,
-    quantity: number,
-  }];
+  totalItemsCount: Number;
+  products: any;
   createdDate: Number;
 }
 
+// export interface iCartProduct {
+//   _id: string;
+//   product: iProduct;
+//   quantity: number;
+//   pull: any;
+// }
+
 const productSchema = new Schema({
-  product: {},
+  title: {
+    type: String,
+    default: ''
+  },
+  price: {
+    type: Number,
+    default: 0
+  },
+  imageUrl: {
+    type: String,
+    default: ''
+  },
+  category: {
+    type: String,
+    default: ''
+  },
   quantity: {
     type: Number,
     default: 0

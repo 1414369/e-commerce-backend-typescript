@@ -8,7 +8,7 @@ export function corsInit() {
     const options: cors.CorsOptions = {
         origin: defaultOrigin,
         allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Accept", "X-Access-Token"],
-        methods: "GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE",
+        methods: "GET,OPTIONS,PUT,POST,DELETE",
     };
 
     return cors(options);

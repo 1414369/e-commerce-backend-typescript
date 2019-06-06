@@ -2,6 +2,7 @@ import * as _ from 'lodash';
 import * as mongoose from 'mongoose';
 import { HTTPError } from '@/helpers';
 import { iExtendedRequest } from '@/_interface';
+import { iShoppingCart } from '../model';
 
 export default class shoppingCartController {
 
@@ -18,7 +19,6 @@ export default class shoppingCartController {
         if (!req.product.quantity) { // product does not exist
             // req.product = null, req.body = product data
             let productId = req.params.productId;
-            let shoppingCart = req.shoppingCart;
 
             product = req.body;
             product._id = productId;
@@ -36,14 +36,14 @@ export default class shoppingCartController {
 
 
     static remove = async (req: iExtendedRequest, res, next) => {
-        let shoppingCart = req.shoppingCart;
+        let shoppingCart: iShoppingCart = req.shoppingCart;
         let product = req.product;
 
         if (product.quantity > 1) {
             product.quantity--;
         } else { // 0
-            shoppingCart.products.pop(product._id);
-            product = { quantity: 0 };
+            shoppingCart.products.pull(product._id)
+            product.quantity = 0;
         }
 
         await shoppingCart.save();
