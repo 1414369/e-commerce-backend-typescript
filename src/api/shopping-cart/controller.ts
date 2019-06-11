@@ -2,17 +2,23 @@ import { HTTPError } from '@/helpers/httpErrors';
 import * as _ from 'lodash';
 import ShoppingCart, { iShoppingCart } from './model';
 
-const returnPropeties = ['_id', 'createdDate', 'products'];
-const pickPropeties = ['createdDate', 'products'];
+const returnPropeties = ['_id', 'createdDate', 'items'];
+const pickPropeties = ['createdDate', 'items'];
 
 export class shoppingCartController {
 
     static getById = async (req, res, next) => {
-        let shoppingCart = _.pick(req.model, returnPropeties) as iShoppingCart;
-        shoppingCart.totalItemsCount = shoppingCart.products.reduce((total, currProduct) => {
-            return total + currProduct.quantity;
-        }, 0)
-        return res.send(shoppingCart);
+        return res.send(_.pick(req.model, returnPropeties));
+    }
+
+    static clear = async (req, res, next) => {
+        let shoppingCart = req.model;
+
+        shoppingCart.items = [];
+
+        await shoppingCart.save();
+
+        return res.send(_.pick(shoppingCart, returnPropeties));
     }
 
     static create = async (req, res, next) => {

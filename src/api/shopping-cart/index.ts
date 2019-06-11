@@ -13,6 +13,7 @@ router.use('/:id/items', itemsRoutes);
 
 // operator
 router.get('/:id', shoppingCartController.getById);
+router.put('/:id', shoppingCartController.clear);
 router.post('/', shoppingCartController.create);
 
 export default router;

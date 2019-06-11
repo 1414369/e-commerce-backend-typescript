@@ -14,26 +14,25 @@ export default class shoppingCartController {
 
     static add = async (req: iExtendedRequest, res, next) => {
         let shoppingCart = req.shoppingCart;
-        let product = req.product;
+        let item = req.product;
 
-        if (!req.product.quantity) { // product does not exist
+        if (req.product.quantity == -1) { // product does not exist
             // req.product = null, req.body = product data
             let productId = req.params.productId;
 
-            product = req.body;
-            product._id = productId;
-            product.quantity = 1;
+            item.product = req.body;
+            item._id = productId;
+            item.quantity = 1;
 
-            shoppingCart.products.push(product);
+            shoppingCart.items.push(item);
         } else {
-            product.quantity++;
+            item.quantity++;
         }
 
         await shoppingCart.save();
 
-        return res.send(product);
+        return res.send(item);
     }
-
 
     static remove = async (req: iExtendedRequest, res, next) => {
         let shoppingCart: iShoppingCart = req.shoppingCart;
@@ -41,8 +40,10 @@ export default class shoppingCartController {
 
         if (product.quantity > 1) {
             product.quantity--;
+        } else if (product.quantity == -1) {
+            return res.send(product);
         } else { // 0
-            shoppingCart.products.pull(product._id)
+            shoppingCart.items.pull(product._id)
             product.quantity = 0;
         }
 
@@ -57,11 +58,11 @@ export default class shoppingCartController {
             return next(new HTTPError.Code404('Invalid ID.'));
 
         let shoppingCart = req.shoppingCart = req.model;
-        req.product = shoppingCart.products.id(productId)
+        req.product = shoppingCart.items.id(productId)
 
         if (!req.product) {
             req.product = {
-                quantity: 0
+                quantity: -1
             }
         }
         next();

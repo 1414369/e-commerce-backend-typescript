@@ -21,7 +21,8 @@ export class productController {
 
     static create = async (req, res, next) => {
         if (req.file && req.file.path) {
-            req.body.imageUrl = `http://localhost:${process.env.PORT || 3000}/${req.file.path}`;
+            let filePath = req.file.path.replace(/\\/g, "/");
+            req.body.imageUrl = `http://localhost:${process.env.PORT || 3000}/${filePath}`;
         }
 
         let products: iProduct = req.body;
@@ -37,7 +38,8 @@ export class productController {
     }
     static edit = async (req, res, next) => {
         if (req.file && req.file.path) {
-            req.body.imageUrl = `http://localhost:${process.env.PORT || 3000}/${req.file.path}`;
+            let filePath = req.file.path.replace(/\\/g, "/");
+            req.body.imageUrl = `http://localhost:${process.env.PORT || 3000}/${filePath}`;
         }
 
         let products = _.pick(req.body, pickPropeties);

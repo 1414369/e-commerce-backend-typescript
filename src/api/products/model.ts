@@ -8,7 +8,7 @@ export interface iProduct extends Document {
   category: string;
 }
 
-const productsSchema = new Schema({
+export const productsSchema = new Schema({
   title: {
     type: String,
     required: true,

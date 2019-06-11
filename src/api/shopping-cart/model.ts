@@ -1,10 +1,9 @@
 import * as Joi from 'joi'
 import { Schema, model, Document } from 'mongoose'
-import { iProduct } from '../products/model';
+import { iProduct, productsSchema } from '../products/model';
 
 export interface iShoppingCart extends Document {
-  totalItemsCount: Number;
-  products: any;
+  items: any;
   createdDate: Number;
 }
 
@@ -15,23 +14,8 @@ export interface iShoppingCart extends Document {
 //   pull: any;
 // }
 
-const productSchema = new Schema({
-  title: {
-    type: String,
-    default: ''
-  },
-  price: {
-    type: Number,
-    default: 0
-  },
-  imageUrl: {
-    type: String,
-    default: ''
-  },
-  category: {
-    type: String,
-    default: ''
-  },
+const itemSchema = new Schema({
+  product: productsSchema,
   quantity: {
     type: Number,
     default: 0
@@ -39,7 +23,7 @@ const productSchema = new Schema({
 });
 
 const shoppingCartSchema = new Schema({
-  products: [productSchema],
+  items: [itemSchema],
   createdDate: {
     type: Number,
     default: new Date()
