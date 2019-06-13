@@ -7,23 +7,26 @@ export interface iShoppingCart extends Document {
   createdDate: Number;
 }
 
-// export interface iCartProduct {
-//   _id: string;
-//   product: iProduct;
-//   quantity: number;
-//   pull: any;
-// }
+export interface iCartItem {
+  _id: string;
+  product: iProduct;
+  quantity: number;
+}
 
-const itemSchema = new Schema({
+export const cartItemSchema = new Schema({
   product: productsSchema,
   quantity: {
     type: Number,
     default: 0
   },
+  totalPrice: {
+    type: Number,
+    default: 0
+  }
 });
 
 const shoppingCartSchema = new Schema({
-  items: [itemSchema],
+  items: [cartItemSchema],
   createdDate: {
     type: Number,
     default: new Date()
