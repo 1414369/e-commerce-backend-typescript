@@ -1,6 +1,7 @@
 import { HTTPError } from '../../helpers/httpErrors';
 import * as _ from 'lodash';
 import Orders, { validate, iOrder } from './model';
+import { iExtendedRequest } from '@/_interface';
 
 const returnPropeties = ['_id', 'user', 'items', 'shipping', 'createdDate'];
 const pickPropeties = ['user', 'items', 'shipping'];
@@ -13,13 +14,14 @@ export class orderController {
         return res.send(orders);
     }
 
-    static getAllByUser = async (req, res, next) => {
-        const productsList = await Orders.find({}, 'user items shipping createdDate').sort({ title: -1 });
-        return res.send(productsList);
-    }
+    static getAll = async (req: iExtendedRequest, res, next) => {
+        let productsList;
+        if (req.user.isAdmin) {
+            productsList = await Orders.find({}, 'user items shipping createdDate').populate('user').sort({ createdDate: -1 });
+        } else {
+            productsList = await Orders.find({ user: req.user._id }, 'user items shipping createdDate').sort({ createdDate: -1 });
+        }
 
-    static getAll = async (req, res, next) => {
-        const productsList = await Orders.find({}, 'user items shipping createdDate').sort({ title: -1 });
         return res.send(productsList);
     }
 

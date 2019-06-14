@@ -14,6 +14,12 @@ export interface iUser extends Document {
   hashPassword(): void;
 }
 
+export interface iTokenData {
+  _id: string;
+  name: string;
+  isAdmin: boolean;
+}
+
 const userSchema = new Schema({
   name: {
     type: String,
