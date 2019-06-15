@@ -2,6 +2,7 @@ import { HTTPError } from '../../helpers/httpErrors';
 import * as _ from 'lodash';
 import Orders, { validate, iOrder } from './model';
 import { iExtendedRequest } from '@/_interface';
+import { iUser } from '../users/model';
 
 const returnPropeties = ['_id', 'user', 'items', 'shipping', 'createdDate'];
 const pickPropeties = ['user', 'items', 'shipping'];
@@ -9,6 +10,10 @@ const pickPropeties = ['user', 'items', 'shipping'];
 export class orderController {
 
     static getById = async (req, res, next) => {
+        if (req.model.user._id !== req.user._id) {
+            return next(new HTTPError.Code403('Access denied.'))
+        }
+
         let orders = _.pick(req.model, returnPropeties);
 
         return res.send(orders);
@@ -39,9 +44,12 @@ export class orderController {
         return res.send(_.pick(orders, returnPropeties));
     }
 
-    static delete = async (req, res, next) => {
-        await Orders.deleteOne({ _id: req.model.id });
+    static delete = async (req: iExtendedRequest, res, next) => {
+        if (req.model.user._id !== req.user._id) {
+            return next(new HTTPError.Code403('Access denied.'))
+        }
 
+        await Orders.deleteOne({ _id: req.model.id });
         return res.send(true);
     }
 }
