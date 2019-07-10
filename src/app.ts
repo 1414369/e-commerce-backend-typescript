@@ -1,4 +1,5 @@
 // TEST DEV TUAN
+// TEST DEV 2440
 import { ErrorHandle } from '@/middleware';
 import * as express from 'express';
 import { dbInit, corsInit, unhandledRejection } from '@/startup';
