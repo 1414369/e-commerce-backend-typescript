@@ -7,6 +7,7 @@ import * as WebSocket from 'ws';
 export function ServerChatController(serverChat: ChatServer) {
     serverChat.bind("new_message", (data: iNewMessage) => {
         serverChat.send('new_message', data, data.receiver);
+        serverChat.send('new_message', data, data.id);
     });
 
     serverChat.bind("register_user", (data: iNewMessage, ws: WebSocket) => {
