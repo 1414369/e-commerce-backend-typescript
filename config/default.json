@@ -1,6 +1,6 @@
 {
   "jwtPrivateKey": "this is the secret key",
-  "fontendUrl": "http://localhost:4200",
-  "db": "mongodb://localhost/vidly",
+  "fontendUrl": "http://storj-dota2divine.ddns.net",
+  "db": "mongodb://localhost/e-commerce",
   "logLevel": "debug"
 }
